@@ -15,12 +15,12 @@ jobs:
           echo Hello, world! >> README.md
           git checkout -b something
           git add README.md
-          git -c user.name=example user.email=example@example.com commit -m 'Hello'
+          git -c user.name=example -c user.email=example@example.com commit -m 'Hello'
           (
           echo '```'
           git show HEAD
           echo
-          echo '```
+          echo '```'
           ) >> "$GITHUB_STEP_SUMMARY"
 
       - name: Create Pull Request
