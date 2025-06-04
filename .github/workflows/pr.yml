@@ -1,7 +1,6 @@
 name: Make a PR
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
@@ -24,5 +23,4 @@ jobs:
           ) >> "$GITHUB_STEP_SUMMARY"
 
       - name: Create Pull Request
-        if: false
         uses: peter-evans/create-pull-request@v7
