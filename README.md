@@ -1,1 +1,2 @@
 # animated-funicular
+Hello, world!
