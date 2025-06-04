@@ -13,7 +13,7 @@ jobs:
       - name: Hello
         run: |
           echo Hello, world! >> README.md
-          git checkout -b 
+          git checkout -b something
           git add README.md
           git -c user.name=example user.email=example@example.com commit -m 'Hello'
           (
